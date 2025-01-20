@@ -1,0 +1,316 @@
+@font-face {
+    font-family: 'frederickatheGreat';
+    src: url(/fonts/FrederickatheGreat-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'jandaSafeandSound';
+    src: url(/fonts/JandaSafeandSound.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%; /* Ajuste para abarcar casi todo el ancho */
+    height: 100%;
+    background: #FF00C4;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 150vh; /* Reduciendo la altura de la sección */
+    background: url('img/marco3.png') no-repeat;
+    background-size: cover;
+    text-align: center;
+    border-radius: 15px;
+    color: #800080; /* Color morado */
+}
+
+h1 {
+    font-size: 6em;
+}
+
+.section h1, .section h2, .section p {
+    margin: 10px;
+}
+
+.section p {
+    font-size: 2.5em;
+    font-family: 'jandaSafeandSound';
+    font-weight: normal; /* Haciendo el título más grande */
+}
+
+p {
+    font-family: 'jandaSafeandSound';
+    font-weight: normal; /* Haciendo el título más grande */
+}
+.section h1, .section h2{
+    font-size: 7em;
+    font-family: 'frederickatheGreat';
+    font-weight: normal; /* Haciendo el título más grande */
+}
+
+h1, h2{
+    font-family: 'frederickatheGreat';
+    font-weight: normal; /* Haciendo el título más grande */
+}
+
+.section h2 {
+    font-size: 5em; /* Haciendo el subtítulo más grande */
+}
+
+.event-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Espaciado entre los eventos */
+    min-height: 10vh; /* Altura mínima de la sección */
+    background: url('path/to/your-background-image.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 15px;
+    padding: 2rem; /* Espaciado interno */
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Espaciado entre el ícono y el texto */
+    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.location-icon {
+    font-size: 2rem; /* Tamaño del ícono */
+    color: #555; /* Color de los íconos */
+}
+
+.church-icon::before {
+    content: '\1F54C'; /* Emoji de iglesia o reemplázalo con un ícono */
+}
+
+.celebration-icon::before {
+    content: '\1F37B'; /* Emoji de copas o reemplázalo con un ícono */
+}
+
+.event span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.event p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.banner {
+    background-color: #ff66cc; /* Color del banner morado */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    flex-direction: column; /* Alineando el contenido verticalmente */
+}
+
+.location-icon {
+    margin-right: 10px;
+    /* Aquí puedes agregar estilos para el icono de ubicación */
+}
+
+.banner span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.quote-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh; /* Reduciendo la altura de la sección */
+    background: url('path/to/your-background-image.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.quote-text {
+    background-color: rgba(128, 0, 128, 0.7); /* Color morado con opacidad */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.5em;
+}
+
+.countdown-section {
+    text-align: center;
+    font-family: 'frederickatheGreat';
+    font-weight: normal; /* Haciendo el título más grande */
+    background-color: #ff66cc; /* Color de fondo rosado/morado */
+    color: white;
+    padding: 20px;
+    min-height: 30vh; /* Reduciendo la altura de la sección */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.countdown-timer {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.event-details {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.map-container {
+    margin-top: 20px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #ff66cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e055b3;
+}
+
+.rsvp-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #800080;
+    color: white;
+    border-radius: 10px;
+    min-height: 30vh; /* Reduciendo la altura de la sección */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.qr-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+span {
+    font-family: 'frederickatheGreat';
+    font-weight: normal; /* Haciendo el título más grande */
+}
+
+i {
+    font-size: 50px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    body {
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        border: none;
+        box-shadow: none;
+    }
+
+    h1, h2 {
+        font-size: 2em;
+    }
+
+    .section {
+        min-height: auto;
+        background-size: contain;
+    }
+
+    .event {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .event span, .event p {
+        font-size: 1em;
+    }
+
+    .countdown-timer {
+        font-size: 1.5em;
+    }
+
+    .map iframe {
+        height: 200px;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 5px 10px;
+    }
+}

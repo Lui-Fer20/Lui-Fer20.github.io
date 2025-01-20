@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XV de Mila</title>
+    <link rel="icon" type="image/png" href="img/icono.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sección de inicio -->
+        <div class="section fade-in" id="inicio">
+            <h1>XV Años</h1>
+            <h2>Camila Fabiana López Negrete</h2>
+            <p>22 de febrero, 2025</p>
+            <p>03:00 pm</p>
+        </div>
+        <!-- Ubicación del evento -->
+        <h1 class="fade-in">Itinerario</h1>
+        <div class="event-location fade-in">
+            <div class="event fade-in">
+                <i class="fas fa-church"></i>
+                <div>
+                    <span>Misa:</span>
+                    <p>Santuario de Guadalupe, Irapuato, Guanajuato, México</p>
+                    <p>12:00 pm</p>
+                </div>
+            </div>
+            <div class="event fade-in">
+                <i class="fas fa-glass-cheers"></i>
+                <div>
+                    <span>Celebración:</span>
+                    <p>Jardines Castillo Santa Rosa, Irapuato, Guanajuato, México</p>
+                    <p>3:00 pm</p>
+                </div>
+            </div>
+        </div>
+        <!-- Resto del contenido... -->
+        <!-- Sección de la cita -->
+        <div class="quote-section fade-in">
+            <div class="quote-text fade-in">
+                <p>Te esperamos con los brazos abiertos para celebrar este momento tan especial! Tu compañía hará de esta ocasión algo inolvidable. Acompáñanos a llenar de alegría, amor y buenos deseos un día que quedará grabado en nuestros corazones por siempre</p>
+                <p>- Camila Fabiana López Negrete</p>
+            </div>
+        </div>
+        <!-- Temporizador de cuenta regresiva -->
+        <div class="countdown-section fade-in">
+            <div class="countdown-timer fade-in" id="countdown-timer">
+                <span id="days"></span> :
+                <span id="hours"></span> :
+                <span id="minutes"></span> :
+                <span id="seconds"></span> 
+                <br>Días, Hrs, Min, Seg
+            </div>
+            <div class="event-details fade-in">
+                Jardines Castillo Santa Rosa, Irapuato, Guanajuato, Mexico - 04:00 pm
+            </div>
+            <div class="map-container fade-in">
+                <div class="map">
+                    <iframe src="https://maps.google.com/maps?q=Jardines%20Castillo%20Santa%20Rosa%2C%20Irapuato%2C%20Guanajuato%2C%20Mexico&output=embed" frameborder="0"></iframe>
+                </div>
+                <button onclick="openGoogleMaps()">Abrir en Google Maps</button>
+            </div>
+        </div>
+        <!-- Sección de confirmación de asistencia -->
+        <div class="rsvp-section fade-in">
+            <h1>¡Esperamos su asistencia!</h1>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
