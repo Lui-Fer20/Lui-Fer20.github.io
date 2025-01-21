@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'frederickatheGreat';
-    src: url(/fonts/FrederickatheGreat-Regular.ttf);
+    src: url(FrederickatheGreat-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'jandaSafeandSound';
-    src: url(/fonts/JandaSafeandSound.ttf);
+    src: url(JandaSafeandSound.ttf);
     font-weight: normal;
     font-style: normal;
 }
@@ -42,7 +42,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 150vh; /* Reduciendo la altura de la sección */
-    background: url('img/marco3.png') no-repeat;
+    background: url('marco3.png') no-repeat;
     background-size: cover;
     text-align: center;
     border-radius: 15px;
